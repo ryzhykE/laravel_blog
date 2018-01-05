@@ -43006,7 +43006,7 @@ var render = function() {
               }
             }
           },
-          [_vm._v("rr\n        "), _c("i", { staticClass: "fa fa-heart" })]
+          [_c("i", { staticClass: "fa fa-heart" })]
         )
       : _c(
           "a",
@@ -43019,7 +43019,7 @@ var render = function() {
               }
             }
           },
-          [_vm._v("nn\n        "), _c("i", { staticClass: "fa fa-heart-o" })]
+          [_c("i", { staticClass: "fa fa-heart-o" })]
         )
   ])
 }

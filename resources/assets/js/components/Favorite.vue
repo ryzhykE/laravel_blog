@@ -1,9 +1,9 @@
 <template>
     <span>
-        <a href="#" v-if="isFavorited" @click.prevent="unFavorite(post)">rr
+        <a href="#" v-if="isFavorited" @click.prevent="unFavorite(post)">
             <i  class="fa fa-heart"></i>
         </a>
-        <a href="#" v-else @click.prevent="favorite(post)">nn
+        <a href="#" v-else @click.prevent="favorite(post)">
             <i  class="fa fa-heart-o"></i>
         </a>
     </span>

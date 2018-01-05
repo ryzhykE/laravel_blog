@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- favicon icon -->
 
     <title>Blog</title>
 
     <!-- common css -->
-    <link rel="stylesheet" href="/css/front.css">
+    <link rel="stylesheet" href="{{ mix('/css/front.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
     <!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,8 +41,6 @@
                 </button>
                 <a class="navbar-brand" href="/"><img src="/images/logo.png" alt=""></a>
             </div>
-
-
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav text-uppercase">
@@ -110,7 +110,10 @@
            </div>
        </div>
    </div>
-	@yield('content')
+<div id="app">
+    @yield('content')
+</div>
+
 
 <!--footer start-->
 <div id="footer">
@@ -276,5 +279,6 @@
 </footer>
 <!-- js files -->
 <script src="/js/front.js"></script>
+<script src="{{ mix('/js/app.js') }}"></script>
 </body>
 </html>

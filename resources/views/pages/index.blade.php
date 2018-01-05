@@ -31,7 +31,6 @@
                         </div>
                         @if (Auth::check())
                             <div class="panel-footer">
-                                gg
                                 <favorite
                                         :post={{ $post->id }}
                                                 :favorited={{ $post->favorited() ? 'true' : 'false' }}
@@ -50,14 +49,7 @@
                         </div>
                     </div>
                 </article>
-
-
-
-
-
-
                 @endforeach
-
                 {{$posts->links()}}
             </div>
             @include('pages._sidebar')
