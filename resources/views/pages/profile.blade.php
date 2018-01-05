@@ -8,17 +8,11 @@
             <div class="col-md-8">
 
                 <div class="leave-comment mr0"><!--leave comment-->
-                    @if(session('status'))
-                    	<div class="alert alert-success">
-                    		{{session('status')}}
-                    	</div>
-                    @endif
                     <h3 class="text-uppercase">My profile</h3>
                     @include('admin.errors')
                     <br>
                     <img src="{{$user->getImage()}}" alt="" class="profile-image">
                     <form class="form-horizontal contact-form" role="form" method="post" action="/profile" enctype="multipart/form-data">
-
                     {{csrf_field()}}
                         <div class="form-group">
                             <div class="col-md-12">

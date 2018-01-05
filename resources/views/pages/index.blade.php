@@ -30,7 +30,7 @@
                             </div>
                         </div>
                         @if (Auth::check())
-                            <div class="panel-footer">
+                            <div class="panel-footer" >
                                 <favorite
                                         :post={{ $post->id }}
                                                 :favorited={{ $post->favorited() ? 'true' : 'false' }}
@@ -38,7 +38,7 @@
                             </div>
                         @endif
                         <div class="social-share">
-                            {{--<span class="social-share-title pull-left text-capitalize">By <a href="#">{{$post->author->name}}</a> On {{$post->getDate()}}</span>--}}
+                            <span class="social-share-title pull-left text-capitalize">{{$post->getDate()}}</span>
                             <ul class="text-center pull-right">
                                 <li><a class="s-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a class="s-twitter" href="#"><i class="fa fa-twitter"></i></a></li>

@@ -56,8 +56,11 @@
                                 @if (Auth::user()->is_admin)
                                     <a href="{{ url('/admin') }}">Admin</a>
                                 @else
-                                    <a href="{{ url('/home') }}">Home</a>
+                                    <a href="{{ url('/profile') }}">Home</a>
                                 @endif
+                                    <li>
+                                        <a href="{{ url('/my_favorites') }}">My Favorites</a>
+                                    </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                                             {{ Auth::user()->name }} <span class="caret"></span>
@@ -177,90 +180,12 @@
                 <aside class="footer-widget">
                     <h3 class="widget-title text-uppercase">Testimonials</h3>
 
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!--Indicator-->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <div class="single-review">
-                                    <div class="review-text">
-                                        <p>Lorem ipsum dolor sit amet, conssadipscing elitr, sed diam nonumy eirmod
-                                            tempvidunt ut labore et dolore magna aliquyam erat,sed diam voluptua. At
-                                            vero eos et accusam justo duo dolores et ea rebum.gubergren no sea takimata
-                                            magna aliquyam eratma</p>
-                                    </div>
-                                    <div class="author-id">
-                                        <img src="/images/author.png" alt="">
-
-                                        <div class="author-text">
-                                            <h4>Sophia</h4>
-
-                                            <h4>Client, Tech</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="single-review">
-                                    <div class="review-text">
-                                        <p>Lorem ipsum dolor sit amet, conssadipscing elitr, sed diam nonumy eirmod
-                                            tempvidunt ut labore et dolore magna aliquyam erat,sed diam voluptua. At
-                                            vero eos et accusam justo duo dolores et ea rebum.gubergren no sea takimata
-                                            magna aliquyam eratma</p>
-                                    </div>
-                                    <div class="author-id">
-                                        <img src="/images/author.png" alt="">
-
-                                        <div class="author-text">
-                                            <h4>Sophia</h4>
-
-                                            <h4>Client, Tech</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="single-review">
-                                    <div class="review-text">
-                                        <p>Lorem ipsum dolor sit amet, conssadipscing elitr, sed diam nonumy eirmod
-                                            tempvidunt ut labore et dolore magna aliquyam erat,sed diam voluptua. At
-                                            vero eos et accusam justo duo dolores et ea rebum.gubergren no sea takimata
-                                            magna aliquyam eratma</p>
-                                    </div>
-                                    <div class="author-id">
-                                        <img src="/images/author.png" alt="">
-
-                                        <div class="author-text">
-                                            <h4>Sophia</h4>
-
-                                            <h4>Client, Tech</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </aside>
             </div>
             <div class="col-md-4">
                 <aside class="footer-widget">
                     <h3 class="widget-title text-uppercase">Custom Category Post</h3>
 
-
-                    <div class="custom-post">
-                        <div>
-                            <a href="#"><img src="/images/footer-img.png" alt=""></a>
-                        </div>
-                        <div>
-                            <a href="#" class="text-uppercase">Home is peaceful Place</a>
-                            <span class="p-date">February 15, 2016</span>
-                        </div>
-                    </div>
                 </aside>
             </div>
         </div>

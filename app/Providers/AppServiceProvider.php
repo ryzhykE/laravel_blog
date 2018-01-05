@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Category;
 use App\Post;
+use App\User;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -21,6 +22,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('recentPosts', Post::orderBy('date', 'desc')->take(4)->get());
             $view->with('categories', Category::all());
         });
+
     }
 
     /**
